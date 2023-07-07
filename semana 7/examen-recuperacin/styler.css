@@ -1,0 +1,141 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+
+.container {
+    position: relative;
+  }
+  
+  img {
+    position: absolute;
+    top: 30;
+    margin-top: 5%;
+    margin-left: 5%;
+    right: 30%;
+    left: 30%;
+  }
+header{
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    justify-content: center;
+}
+.frame-1{
+    margin-left:  30px;
+    border-radius: 0px 0px 0px 00px;
+}
+nav{
+    margin-top: 17px;
+}
+nav ul li{
+    display: inline;
+    font-size:1.2em;
+    margin-right: 10px;
+}
+.menu-item a:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border: 6px solid transparent;
+  border-top: 6px solid #000;
+}
+
+.menu-item:hover > a:after {
+  border-top-color: #0ca4b2;
+}
+
+  
+nav ul li:hover{
+    border-bottom: solid 3px #0ca4b2;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.main{
+    display: flex;
+    width: 55%;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    float: right 40%;
+    margin-left: 20%;
+}
+
+.main-txt{
+    padding: 20px;
+    
+}
+
+.main-txt h1{
+    color: white;
+    font-weight: 3em;
+    font-size: 5em;
+}
+.main-txt h4{
+    color: #0ca4b2;
+
+}
+
+.main-txt button{
+    background-color: black;
+    color: #0ca4b2;
+    border-bottom: #0ca4b2; 
+    font-size: 18px;
+    padding: 30px;
+    border: 3px solid #0ca4b2;
+}
+.icon{
+    margin-top: 10%;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 22%;
+    
+    height: 50vh; /* Establecer el alto del contenedor */
+}
+.icon button{
+    height: 300px;
+    width: 230px;
+    background-color: #1c1b1b;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid #1c1b1b;
+}
+.icon button i{
+    margin-left: 10px;
+    float: left;
+    transform: scale(3.5);
+   
+}
+.icon button p{
+    color: white;
+    
+}
+.icon button h5{
+    margin-bottom: 20%;
+   float: left;
+    color: white;
+    margin-top: auto;
+    font-size: 20px;
+    border-bottom: 2px solid color;
+}
+.btn5:hover, .btn6:hover, .btn7:hover {
+    border: 2px solid #0ca4b2;
+    background-color: transparent;
+}
+
+
+
+
+
+
+

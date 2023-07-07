@@ -1,0 +1,107 @@
+body{
+    background-color: #F8F8F8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card{
+    /*margin: 0 auto;*/
+    background-color: white;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #E8E8E8;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.card-header{
+    position: relative;
+}
+
+.icono{
+    color: #ED4939;
+    font-size: 40px;
+    position: relative;
+    z-index: 2;
+    margin-top: 33px;
+}
+
+.icono:hover{
+    transform: rotate(30deg);
+    filter: grayscale();
+}
+
+.circulo{
+    width: 70px;
+    height: 70px;
+    background-color: #F7E8E8;
+    border-radius: 50%;
+    position: absolute;
+    left: 7px;
+    z-index: 1;
+}
+
+.card-link{
+    color: #BD4F23;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.gps-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo{
+    filter: blur(20px);
+}
+
+.logo:hover{
+    filter: none;
+}
+
+.logo-header{
+    animation-name: animacion-logo;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes animacion-logo{
+    0%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(1.1);
+    }
+    90%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate-logo {
+    0% {
+      transform: perspective(500px) rotateY(-42deg);      
+    }
+    50% {
+      transform: perspective(500px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(500px) rotateY(-42deg);
+    }
+  }
+  
+  @media (max-width:600px){
+    .gps-cards{
+        display: block;
+    }
+
+    .card{
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}

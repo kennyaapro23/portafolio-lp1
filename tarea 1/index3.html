@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+    
+        <h1>Restaurante el centollo</h1>
+        <h5>Haz tu reserva</h5>
+    
+    <table action="reserva">
+        <tr>
+            <td>Nombbre</td>
+            <td><input type="text" required placeholder="Nombre"></td>
+        </tr>
+        <tr>
+            <td>Correo electronico</td>
+            <td><input type="email" required placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td>Telefono</td>
+            <td><input type="number" required placeholder="number"></td>
+        </tr>
+        <tr>
+            <td>Fecha de reseva</td>
+            <td><input type="date" required placeholder="date"></td>
+        </tr>
+        <tr>
+            <td>Franja horaria</td>
+            <td><input type="time"></td>
+        </tr>
+
+        <tr>
+            <td>Comensales(min 1, max 10 )</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <tr>
+                <td>Color mantel</td>
+                <td><input type="color"></td>
+            </tr>
+        <tr>
+            <td colspan="3">
+                <label>Demandas especiales</label><br>
+                <textarea cols="40" rows="5">Alergias, tronas, .....</textarea>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <td colspan="2" styles="text-aling: center"><input type="submit" value="Enviar"></td>
+            <td></td>
+        </tr>
+    </table>
+    
+
+    <hr>
+    
+    <h1>Formulario de alta</h1>
+    
+    <div style="display:flex; flex-direction:row;">
+        <div class ="for 1">
+            <form action="">
+                <label><b>Nombre y apellido</b> </label> <br/>
+                <br/>
+                <input type="text" name="nombre" size="30"/><br/>
+                <label style="color: grey;">Nombre</label>
+                </br/>
+                <input type="text" name="nombre" size="30"/><br/>
+                <label style="color: grey;">Primer apelido</label>
+                <br/>
+                <input type="text" name="nombre" size="30"/><br/>
+                <label style="color: grey;">Segundo apellido</label>
+                <br/>
+                <label for=""><b>Email</b></label><br/>
+                <input type="email" name="nombre" size="30"/> <br/>
+
+            </form>    
+        </div>
+        
+        <div style="width: 3%;"></div>
+        
+        <div class="for 2">
+            <form action="">
+                <label for=""><b>Direccion</b></label><br/>
+                <br/>
+                <input type="text" name="Direccion" size="30"/><br/>
+                <label style="color: grey;">calle, numero, piso, puerta</label>
+                <br/>
+                <div style="display:flex; justify-content: space-between;">
+                <div style="width: 45%;">
+                <input type="text" name="Direccion" size="15"/><br/>
+                <label style="color: grey;">Codigo postal</label>
+                
+                </div>
+                <div style="width: 45%;">
+                <input type="text" name="Direccion" size="10"/><br>
+                <label style="color: grey;">Municipio</label>
+                
+                </div>
+                </div>
+                
+
+                <div style="display:flex; justify-content: space-between;">
+                    <div style="width: 45%;">
+                <select name="provincia" id="provincia" required>
+                    <option value=""></option>
+                    <option value="lima">Lima</option>
+                    <option value="arequipa">Arequipa</option>
+                    <option value="cusco">Cusco</option>
+                    </select><br><label style="color: grey;">Provincia</label>
+                    </div>
+                    
+                <div style="width: 45%;">
+                        <select name="pais" id="pais" required>
+                            <option value=""></option>
+                            <option value="peru">Perú</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+                        </select><br><label style="color: grey;">Pais</label>
+                </div>
+                
+                </div>
+                <label for=""><b>Telefono</b></label><br/>
+                <div style="display:flex; justify-content: space-between;">
+                <div style="width: 45%;">
+                <input type="text" name="nombre" size="30"/><br/>
+                <label style="color: grey;">Fijo</label><br>
+                </div>
+                <div style="width: 45%;">
+                <input type="text" name="nombre" size="30"/><br/>
+                <label style="color: grey;">Movil</label><br/>
+                <br>
+                <tr>
+                    <td colspan="" styles="text-aling: right"><input type="submit" value="DAME DE ALTA"></td>
+                    <td></td>
+                </tr>
+                </div>
+                </div>
+                <tr>
+
+
+            </form>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

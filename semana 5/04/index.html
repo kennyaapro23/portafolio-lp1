@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <button onclick="saludar()">Saludar</button>
+
+    <div class="cards">
+        <h3>Calculadora</h3>
+        <div>
+            <form action="">
+                <div class="input">
+                    <label>Ingrese numero 1</label>
+                    <input type="text" id="n1" class="input2">
+                </div>
+                <div>
+                    <label>Ingrese numero 2</label>
+                    <input type="text" id="n2" class="input2">
+                </div>
+                <div class="botones">
+                    <input type="button" value="Suma" onclick="sumar()" class="btn">
+                    <input type="button" value="Restar" onclick="restar()" class="btn">
+                    <input type="button" value="Multiplicar" onclick="producto()" class="btn">
+                    <input type="button" value="Dividir" onclick="dividir()" class="btn">
+                    <input type="reset" value="Limpiar" class="btn">
+                </div>
+            </form>
+            <div>
+                <p id="resultado">Resultado:</p>
+            </div>
+        </div>
+    <!--section car-->
+    <div class="card-car">
+        <div class="car">
+            <img src="imagen/img/negro.jpg" id="car" >
+        </div>
+        <div class="colors">
+            <div class="black" onclick="cambiarNegro()" ></div>
+            <div class="red" onclick="cambiarRojo()"></div>
+            <div class="white" onclick="cambiarBlanco()"></div>
+            <div class="gris" onclick="cambiarGris()"></div>
+            <div class="marron" onclick="cambiarMarron()"></div>
+        </div>
+    </div>   
+    
+</body>
+</html>
